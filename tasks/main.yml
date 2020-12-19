@@ -1,2 +1,12 @@
 ---
 # tasks file for Ansible-Docker-DPS
+- name: Replace DPS Configuration
+  template:
+    src: "templates/config.json.j2"
+    dest: "{{ DOCKER_DPS_CONFIG_PATH }}"
+
+- name: Restart DPS Container
+  docker_container:
+    name: "{{ DOCKER_DPS_CONTAINER_NAME }}"
+    state: started
+    restart: yes

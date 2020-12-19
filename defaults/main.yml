@@ -7,3 +7,19 @@ DOCKER_DPS_VOLUMES_MAPPING: []
 DOCKER_DPS_PORT_MAPPING: []
 DOCKER_DPS_ENVIRONMENT_VARS: []
 DOCKER_DPS_NETWORK_NAME: ""
+DOCKER_DPS_CONFIG_PATH: ""
+DOCKER_DPS_CONFIG:
+  version: 2
+  remoteDnsServers: []
+  envs: []
+  activeEnv: ""
+  webServerPort: 0
+  dnsServerPort: 0
+  defaultDns: null
+  logLevel: "INFO"
+  logFile: "console"
+  registerContainerNames: null
+  hostMachineHostname: ""
+  domain: ""
+  dpsNetwork: False
+  dpsNetworkAutoConnect: False
