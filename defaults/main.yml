@@ -1,2 +1,9 @@
 ---
 # defaults file for Ansible-Docker-DPS
+DOCKER_DPS_CONTAINER_NAME: "dns-proxy-server"
+DOCKER_DPS_IMAGE: "defreitas/dns-proxy-server"
+DOCKER_DPS_RESTART_POLICY: "unless-stopped"
+DOCKER_DPS_VOLUMES_MAPPING: []
+DOCKER_DPS_PORT_MAPPING: []
+DOCKER_DPS_ENVIRONMENT_VARS: []
+DOCKER_DPS_NETWORK_NAME: ""
